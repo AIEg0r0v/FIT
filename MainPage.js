@@ -12,7 +12,7 @@ function toggleContent(content){
 	//insert check that the variable is inspection class
 	inspection.toggleClass("InspectionItem InspectionItemExpanded");
 	toggleContent(inspection.children(".IIContent"));
-	toggleContent(inspection.children(".IIHeader").children(".IIContentCollapse"));
+	toggleContent(inspection.children(".IIHeader, .IIHeaderContentExpanded").children(".IIContentCollapse"));
  };
  
 $(document).ready(function(){
@@ -20,8 +20,9 @@ $(document).ready(function(){
 	// $("div.InspectionItem").click(function(){
 		// toggleInspectionClass($(this));
 	// });
-	$("div.IIHeader").click(function(){
+	$("div.IIHeader, div.IIHeaderContentExpanded").click(function(){
 		var inspection = $(this).parent(".InspectionItem, .InspectionItemExpanded")
 		toggleInspectionClass(inspection);
+		$(this).toggleClass("IIHeader IIHeaderContentExpanded");
 	});
 });

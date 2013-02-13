@@ -50,18 +50,25 @@
 .InspectionItem {
 
 	background-color:#000099;
-	padding: 3% 5% 3% 5%;
 }
 
 .InspectionItemExpanded {
 	background-color:#0000ff;
-	padding: 3% 5% 3% 5%;
+	
 }
 
 .IIHeader{
+	padding: 3% 5% 3% 5%;
+}
+.IIHeaderContentExpanded{
+	
+	background-color:#0033dd;
+	border-bottom:1px solid #0000ff;
+	padding: 3% 5% 3% 5%;
 }
 .IIContent,.IIContentCollapse{
 	display:none;
+	padding: 3% 5% 3% 5%;
 }
 .IIContentCollapse{
 	float:right;
