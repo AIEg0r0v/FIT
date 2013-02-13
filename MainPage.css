@@ -17,7 +17,7 @@
 .NavigatioBar, .InspectionsListContainer {
 	border:1px solid #ff9999;
 }
-.InspectionItemExpanded{
+.InspectionItemExpanded, .InspectionItem{
 	border-top: 1px solid #ff9999;
 	border-bottom: 1px solid #ff9999;
 }
@@ -28,7 +28,7 @@
 	text-decoration:none;
 	color:white;
 	background-color: #ff0000;
-	padding: 3em 1em 3em 1em;
+	padding: 2em 1em 2em 1em;
 	margin-left: 7%;
 	margin-right: 5%;
 
@@ -39,6 +39,8 @@
 	margin-right: 5%;
 	padding: 3% 5% 3% 5%;
 }
+
+
 .InspectionsListContainer {
 	color:#ffffff;
 	background-color:#00aa55;
@@ -46,6 +48,7 @@
 	margin-right: 5%
 }
 .InspectionItem {
+
 	background-color:#000099;
 	padding: 3% 5% 3% 5%;
 }
@@ -55,6 +58,14 @@
 	padding: 3% 5% 3% 5%;
 }
 
+.IIHeader{
+}
+.IIContent,.IIContentCollapse{
+	display:none;
+}
+.IIContentCollapse{
+	float:right;
+}
 .NavigationBar, .Footer {
 	clear:both;
 	background-color:#005500;

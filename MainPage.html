@@ -7,14 +7,16 @@
     <link href="MainPage.css" rel="stylesheet" type="text/css">
 	<!-- using CDN, so person don't have to download our own version of jQuery -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script> -->
 	<!-- Local jQuery code -->
-	<script  href="MainPage.js"></script>
+	<script  src="MainPage.js" charset="UTF-8"></script>
+	
+
   </head>
   
   <body>
   	<div class="PageContainer">
-		<div class="Header">
+		<div class="Header" id="test">
 			<h1>FIT - formal inspection tool</h1>
 		</div>
 	
@@ -26,48 +28,72 @@
 	            <li class="NavigationItem">
 	              <a href="#" class="NavigationItemLink">About</a> 
 	            </li>
-				<li class="NavigationItem">
+				<li class="NavigationItem" >
 	               <a href="#" class="NavigationItemLinkLogin">Login</a> 
 	            </li>
 	          </ul> 
 	      
 	    </div>
-		
+
 	    <div class="PageMainContainer">
-	      <div class="ImportantInformation">
-			<h3>The inspection 2 is now available. Play with it carefully</h3>
+	      <div class="ImportantInformation" id="test">
+			<div class="IIHeader">
+				<h3>The inspection 2 is now available. Play with it carefully</h3>
+			</div>
+			<div class="IIContent">
+				<p> Out of content. Sorry!! </p>
+			</div>
 		  </div>
 		  <!-- Container with inspections-->
 	      <div class="InspectionsListContainer">
 	        <!--Inspection item folded-->
 			<div class="InspectionItem">
-				<h3>Inspection 1</h3><b>01.01.2013</b>
+				<div class="IIHeader">
+					<h3>Inspection 1</h3><b>01.01.2013</b>
+					<span class="IIContentCollapse">collapse</span>
+				</div>
+				<div class="IIContent">
+					<p> there is no content right now</p>
+				</div>
 			</div>
 	        <!--Inspection item unfolded-->
-			<div class="InspectionItemExpanded">
-				<h3>Inspection 2</h3><b>11.02.2013</b>
-				<h4>You are not logged in therefore you have this message</h4>
-				<section>
-					<h4>WWF</h4>
-					<p>The World Wide Fund for Nature (WWF) is an international 
-					organization working on issues regarding the conservation, 
-					research and restoration of the environment, formerly named 
-					the World Wildlife Fund. WWF was founded in 1961.
-					</p>
-				</section>
-	
-				<section>
-					<h4>WWF's Panda symbol</h4>
-					<p>The Panda has become the symbol of WWF. The well-known panda logo 
-					of WWF originated from a panda named Chi Chi that was transferred from 
-					the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.
-					</p>
-				</section>
+			<div class="InspectionItem">
+				<div class="IIHeader">
+					<h3>Inspection 2</h3><b>11.02.2013</b>
+					<span class="IIContentCollapse">collapse</span>
+				</div>
+				<div class="IIContent">
+					<h4>You are not logged in therefore you have this message</h4>
+					<section>
+						<h4>WWF</h4>
+						<p>The World Wide Fund for Nature (WWF) is an international 
+						organization working on issues regarding the conservation, 
+						research and restoration of the environment, formerly named 
+						the World Wildlife Fund. WWF was founded in 1961.
+						</p>
+					</section>
+		
+					<section>
+						<h4>WWF's Panda symbol</h4>
+						<p>The Panda has become the symbol of WWF. The well-known panda logo 
+						of WWF originated from a panda named Chi Chi that was transferred from 
+						the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.
+						</p>
+					</section>
+				</div>
+				
+				
 						
 			</div>
 			<!--Inspection item folded-->	
 			<div class="InspectionItem">
-				<h3>Inspection 3</h3><b>21.03.2013</b>
+				<div class="IIHeader">
+					<h3>Inspection 3</h3><b>21.03.2013</b>
+					<span class="IIContentCollapse">collapse</span>
+				</div>
+				<div class="IIContent">
+					<p> there is no content right now</p>
+				</div>	
 			</div>
 	      </div>
 	    </div>
