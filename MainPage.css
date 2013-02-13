@@ -75,7 +75,7 @@
 	
 }
 .NavigationItemLink{
-
+    
 	float:left;
 	width:4em;
 	text-decoration:none;
@@ -87,9 +87,10 @@
 }
 .NavigationItemLink:hover, .NavigationItemLinkLogin:hover{
 	background:#ff7700;
-	border-right-color:#777777;
-	border-bottom-color:#777777;
-	box-shadow: 0.1em 0.1em #777777;
+	/* border-right-color:#777777;
+	border-bottom-color:#777777; */
+	/* box-shadow: 0.1em 0.1em #777777; */
+	
 } 
 .NavigationItemLinkLogin{
 	float:right; 
