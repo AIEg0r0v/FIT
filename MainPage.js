@@ -16,13 +16,21 @@ function toggleContent(content){
  };
  
 $(document).ready(function(){
+	
 
-	// $("div.InspectionItem").click(function(){
-		// toggleInspectionClass($(this));
-	// });
+	$("div.Artifact").click(function(){
+		$("#InspectionItemModal").modal('show');
+		
+	});
+	
+	$("
 	$("div.IIHeader, div.IIHeaderContentExpanded").click(function(){
 		var inspection = $(this).parent(".InspectionItem, .InspectionItemExpanded")
 		toggleInspectionClass(inspection);
 		$(this).toggleClass("IIHeader IIHeaderContentExpanded");
 	});
+	
+	
+	
 });
+
