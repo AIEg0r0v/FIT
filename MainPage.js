@@ -22,14 +22,14 @@ $(document).ready(function(){
 		$("#InspectionItemModal").modal('show');
 		
 	});
-	
-	$("
+
 	$("div.IIHeader, div.IIHeaderContentExpanded").click(function(){
 		var inspection = $(this).parent(".InspectionItem, .InspectionItemExpanded")
 		toggleInspectionClass(inspection);
 		$(this).toggleClass("IIHeader IIHeaderContentExpanded");
 	});
-	
+	$('#liquid').liquidcarousel({height:110, hidearrows: false});
+
 	
 	
 });

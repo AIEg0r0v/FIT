@@ -1,0 +1,46 @@
+.ArtifactInspection{
+	 
+}
+.ArtifactPreview, .CommentTable, .modal-body{
+	min-height: 450px;
+}
+
+body .modal{
+	width: 1100px;
+	height:auto;
+	
+	margin-left:-550px;
+}
+
+.Artifact{
+	border: 1px solid #ff0000;
+	margin: 10px 10px;
+	min-width: 12em;
+}
+.Artifacts{
+	border: 1px solid #0000ff;
+
+}
+.Artifact-onhover{
+	border: 1px solid #555555;
+	margin: 10px 0px;
+}
+
+.Chat {
+	border: 1px solid #00ff00;
+	height: 300px;
+} 
+
+.InspectionSelected {
+	border: 1px solid #00dddd;
+}
+.InspectionItem , .InspectionItemExpanded{
+	border: 2px solid #00cc00;
+}
+
+.IIContent{
+	display:none;
+}
+.liquid{
+	margin: 0px 0px 10px 0px;
+}

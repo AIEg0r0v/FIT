@@ -6,28 +6,34 @@
     <!-- link to CSS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="Artifacts.css" rel="stylesheet" type="text/css">
 	
+	<link href="liquidcarousel/css/liquidcarousel.css" rel="stylesheet" type="text/css">
+	
+	<link href="Artifacts.css" rel="stylesheet" type="text/css">
 	<!-- using CDN, so person don't have to download our own version of jQuery -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<!-- <script src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script> -->
 	<!-- Local jQuery code -->
 	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="liquidcarousel/js/jquery.liquidcarousel.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	
+	
 	<script  src="MainPage.js" charset="UTF-8"></script>
 	
 
   </head>
   
 <body>
-  	<div class="container">
-		<div class="row">
+  	<div class="container-fluid">
+		<!-- <div class="row-fluid">
 			<div class="span8 offset2">
 				<h1>FIT - formal inspection tool</h1>
 			</div>
-		</div>
-		<div class="row">
+		</div> -->
+		<div class="row-fluid">
 			<!-- Navigation bar  -->
-			<div class="navbar">
+			<div class="navbar navbar-inverse">
 				<div class="navbar-inner">
 					<ul class="nav">
 						<li>
@@ -54,8 +60,8 @@
 		</div>
 		<!-- Main paige stuff -->
 	    <!-- <div class="row"> -->
-			<div class="row">
-				<div class="span12 ImportantInformation">
+			<div class="row-fluid">
+				<div class="well well-small span12 ImportantInformation">
 					<div class="IIHeader">
 						<h3>The inspection 2 is now available. Play with it carefully</h3>
 					</div>
@@ -65,47 +71,51 @@
 				</div>
 			</div>
 		  <!-- Container with inspections-->
-			<div class="row">
+			<div class="row-fluid">
 	        <!--Inspection item folded-->
-				<div class="span12">
-					<ul class="thumbnails">
-						<li class="span2">
-							<div class="thumbnail InspectionItem">
-								<div class="IIHeader">
-									<h3>Inspection 1</h3><b>01.01.2013</b>
-									
+				<div id="liquid" class="liquid">
+					<span class="previous"></span>
+					<div class="wrapper">
+						<ul>
+							<li>
+								<div class="well well-small InspectionItem">
+									<div class="IIHeader">
+										<h3>Inspection 1</h3><b>01.01.2013</b>
+										
+									</div>
+									<div class="IIContent">
+										<p> there is no content right now</p>
+									</div>
 								</div>
-								<div class="IIContent">
-									<p> there is no content right now</p>
+							</li>
+							<!--Inspection item unfolded-->
+							<li>
+								<div class="well well-small InspectionItem">
+									<div class="IIHeader">
+										<h3>Inspection 2</h3><b>11.02.2013</b>
+										
+									</div>
+									<div class="IIContent">
+										<p>You are not logged in therefore you have this message</p>
+										
+									</div>			
 								</div>
-							</div>
-						</li>
-						<!--Inspection item unfolded-->
-						<li class="span8">
-							<div class="thumbnail InspectionItem">
-								<div class="IIHeader">
-									<h3>Inspection 2</h3><b>11.02.2013</b>
-									
+							</li>
+							<!--Inspection item folded-->
+							<li>
+								<div class="well well-small InspectionItem">
+									<div class="IIHeader">
+										<h3>Inspection 3</h3><b>21.03.2013</b>
+										
+									</div>
+									<div class="IIContent">
+										<p> there is no content right now</p>
+									</div>	
 								</div>
-								<div class="IIContent">
-									<p>You are not logged in therefore you have this message</p>
-									
-								</div>			
-							</div>
-						</li>
-						<!--Inspection item folded-->
-						<li class="span2">
-							<div class="thumbnail InspectionItem">
-								<div class="IIHeader">
-									<h3>Inspection 3</h3><b>21.03.2013</b>
-									
-								</div>
-								<div class="IIContent">
-									<p> there is no content right now</p>
-								</div>	
-							</div>
-						</li>
-					</ul>
+							</li>
+						</ul>
+					</div> <!-- end of wrapper -->
+					<span class="next"></span>
 				</div>
 			</div>
 		  
@@ -115,7 +125,7 @@
 						<div class="span8 Artifacts">
 							
 							<div class="row-fluid">
-								<div class="span4 Artifact">
+								<div class="span3 Artifact well well-small">
 									<h2>Artifact1</h2>
 								</div>
 								<div class="span1 Artifact-onhover">
@@ -125,7 +135,7 @@
 								</div>
 							</div>
 							<div class="row-fluid">
-								<div class="span4 Artifact">
+								<div class="span3 Artifact  well well-small">
 									<h2>Artifact2</h2>
 								</div>
 								<div class="span1 Artifact-onhover">
@@ -135,7 +145,7 @@
 								</div>
 							</div>
 							<div class="row-fluid">
-								<div class="span4 Artifact">
+								<div class="span3 Artifact  well well-small">
 									<h2>Artifact3</h2>
 								</div>
 								<div class="span1 Artifact-onhover">
@@ -154,7 +164,16 @@
 							
 						</div>
 						<div class="span4 Chat">
-							Chatz
+							<div class="row-fluid">
+								<div>
+									Chat widow
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div>
+									Chat input
+								</div>
+							</div>
 							<!-- <textarea rows="3">Your comment</textarea> -->
 						</div>
 						
@@ -163,7 +182,7 @@
 			</div>
 	    <!-- </div> -->
 		
-		<div class="row ArtifactInspection">
+		<div class="row-fluid">
 			<div class="span12 Footer">
 				<p> Some information being copyrighted(C) </p> 
 				

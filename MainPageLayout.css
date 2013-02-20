@@ -19,6 +19,7 @@
 
 .Header{
 	clear:both;
+	display:none;
 	text-align:center;
 	min-width: 16em;
 	text-decoration:none;
