@@ -1,0 +1,15 @@
+.MessageWindow{
+
+}
+.UserDigest{
+	text-align: right;
+}
+.AuthorDigest{
+	color: #212318;
+}
+.MessageInner{
+	background-color:#c6dbdd;
+}
+.ChatTypeBox{
+	width: inherit;
+}

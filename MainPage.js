@@ -8,13 +8,14 @@ function toggleContent(content){
 };
 
 //On change Inspection class when expanded/collapsed.
- function toggleInspectionClass(inspection){
-	//insert check that the variable is inspection class
-	inspection.toggleClass("InspectionItem InspectionItemExpanded");
-	toggleContent(inspection.children(".IIContent"));
-	toggleContent(inspection.children(".IIHeader, .IIHeaderContentExpanded").children(".IIContentCollapse"));
+ function toggleContentVisibility(container){
+	var content = container.children(".IIContent");
+	//something like  if(content != null) is needed
+	//container.toggleClass("InspectionItem InspectionItemExpanded");
+	toggleContent(content);
  };
- 
+
+
 $(document).ready(function(){
 	
 
@@ -23,9 +24,11 @@ $(document).ready(function(){
 		
 	});
 
+
+
 	$("div.IIHeader, div.IIHeaderContentExpanded").click(function(){
-		var inspection = $(this).parent(".InspectionItem, .InspectionItemExpanded")
-		toggleInspectionClass(inspection);
+		var container = $(this).parent();
+		toggleContentVisibility(container);
 		$(this).toggleClass("IIHeader IIHeaderContentExpanded");
 	});
 	$('#liquid').liquidcarousel({height:110, hidearrows: false});
