@@ -1,7 +1,6 @@
 .liquid {
-	/* background:#313b31 url('../images/bodybackground.png') repeat-y scroll 50% 0; */
-	background:#c6dbdd repeat-y scroll 50% 0; 
-	border: 2px solid #00aaaa;
+	background:#ffffff repeat-y scroll 50% 0; 
+	border: 1px solid #cccccc;
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px 10px 10px 10px;
 	border-radius:10px 10px 10px 10px;	padding:10px 0;
@@ -10,6 +9,7 @@
 	display:block;
 	height:110px;
 	width:64px;
+	/*background-color: rgba(40,29,35,0.5);*/
 	background-image:url('../images/previous.png');
 	float:left;
 	margin:0;
@@ -19,6 +19,7 @@
 	display:block;
 	height:110px;
 	width:64px;
+	/*background-color: rgba(40,29,35,0.5);*/
 	background-image:url('../images/next.png');
 	float:right;
 	margin:0;

@@ -6,7 +6,9 @@ function toggleContent(content){
 	//insert check that the variable is div. Better if it is a proper div
 	content.fadeToggle("slow");
 };
+function toggleContentSlide(content){
 
+}
 //On change Inspection class when expanded/collapsed.
  function toggleContentVisibility(container){
 	var content = container.children(".IIContent");
@@ -15,10 +17,18 @@ function toggleContent(content){
 	toggleContent(content);
  };
 
+function slideUpProps(container){
+		var ArtifactProps = container.children(".Artifact-onhover");
+		ArtifactProps.slideUp("fast");
+};
 
+function slideDownProps(container){
+		var ArtifactProps = container.children(".Artifact-onhover");
+		ArtifactProps.slideDown("fast");
+	}
 $(document).ready(function(){
 	
-
+	var propsTimeout;
 	$("div.ArtifactBody").click(function(){
 		$("#InspectionItemModal").modal('show');
 		
@@ -32,7 +42,14 @@ $(document).ready(function(){
 	});
 	$('#liquid').liquidcarousel({height:110, hidearrows: false});
 
+	$(".Artifact, .InspectionItem").hover(function(){
+		propsTimeout = window.setTimeout(slideDownProps,1000,$(this));
+		// slideDownProps($(this));
+	},function(){
+		window.clearTimeout(propsTimeout);
+		slideUpProps($(this));
+	});
 	
-	
+
 });
 

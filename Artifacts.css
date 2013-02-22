@@ -18,28 +18,71 @@ body .modal{
 	min-width: 13em;
 	position: relative;
 }
+
 .Artifacts{
 	padding: 10px;
-	border: 2px solid #00aaaa;
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;
-	border-radius:10px 10px 10px 10px;
+	/*background:#dddddd;*/
+	/*border: 1px solid #cccccc;*/
+	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	border-radius:5px;
 
 }
 .Artifact-onhover{
-	border: 1px solid #555555;
-	margin: 10px 0px;
-}
+	display:none;
+	background-color: rgba(40,29,35,0.5);
+	width:100%;
+	text-align: center;
+	border-radius:2px 2px 0px 0px;
+	height:34px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
 
+}
+/*.Artifact-onhover>ul{
+	list-style: none;
+	list-style-type: none; 
+
+}*/
+.Artifact-onhover>.ArtifactProp{
+	border:1px solid rgba(40,29,35,0);
+	/*background-color: rgba(92,81,79,0.5);*/
+	border-radius: 2px 2px 2px 2px;
+
+}
+.Artifact-onhover>.ArtifactProp:hover{
+	/*border:1px solid rgba(10,19,15,1);*/
+	background-color: rgba(92,81,79,0.5);
+	border-radius: 2px 2px 2px 2px;
+
+}
+.Artifact-Footer>.ArtifactProp{
+	border:1px solid rgba(40,29,35,0);
+	/*background-color: rgba(92,81,79,0.5);*/
+	border-radius: 2px 2px 2px 2px;
+
+}
+.Artifact-Footer>.ArtifactProp:hover{
+	/*border:1px solid rgba(10,19,15,1);*/
+	background-color: rgba(200,200,200,0.5);
+	border-radius: 2px 2px 2px 2px;
+
+}
 .InspectionItem , .InspectionItemExpanded{
-	border: 2px solid #00aaaa;
+	border: 1px solid #cccccc;
+	position: relative;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
 }
-
+.ImportantInformation{
+	border: 1px solid #cccccc;
+}
 .IIContent{
 	display:none;
+
 }
 .liquid{
 	margin: 0px 0px 10px 0px;
@@ -47,4 +90,11 @@ body .modal{
 .Status{
 	width:6em;
 	
+}
+.Footer{
+	background-color: #8F0000;
+	color: white;
+	text-align: center;
+	border-radius:5px;
+	margin: 10px 0px 0px 0px;
 }

@@ -5,12 +5,13 @@
 }
 .ChatContainer{
 	height: 400px;
-	/*width: 95%;*/
+	max-width: 300px;
+
 	padding: 10px 10px;
-	border: 2px solid #00aaaa;
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;
-	border-radius:10px 10px 10px 10px;
+	/*border: 1px solid #cccccc;*/
+	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	border-radius:5px;
 }
 .MessageWindowInner{
 	height: 100%; /*don forget to substract border of parent*/
