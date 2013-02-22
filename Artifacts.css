@@ -13,12 +13,17 @@ body .modal{
 }
 
 .Artifact{
-	border: 1px solid #ff0000;
-	margin: 10px 10px;
-	min-width: 12em;
+	border: 1px solid #a4b1c9;
+	margin: 0px 0px 10px 0px;
+	min-width: 13em;
+	position: relative;
 }
 .Artifacts{
-	border: 1px solid #0000ff;
+	padding: 10px;
+	border: 2px solid #00aaaa;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
 
 }
 .Artifact-onhover{
@@ -26,12 +31,11 @@ body .modal{
 	margin: 10px 0px;
 }
 
-
-.InspectionSelected {
-	border: 1px solid #00dddd;
-}
 .InspectionItem , .InspectionItemExpanded{
-	border: 2px solid #00cc00;
+	border: 2px solid #00aaaa;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 }
 
 .IIContent{
@@ -39,4 +43,8 @@ body .modal{
 }
 .liquid{
 	margin: 0px 0px 10px 0px;
+}
+.Status{
+	width:6em;
+	
 }

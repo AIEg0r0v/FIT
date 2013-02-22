@@ -19,11 +19,10 @@ function toggleContent(content){
 $(document).ready(function(){
 	
 
-	$("div.Artifact").click(function(){
+	$("div.ArtifactBody").click(function(){
 		$("#InspectionItemModal").modal('show');
 		
 	});
-
 
 
 	$("div.IIHeader, div.IIHeaderContentExpanded").click(function(){

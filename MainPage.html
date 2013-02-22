@@ -21,7 +21,8 @@
 	
 	
 	<script  src="MainPage.js" charset="UTF-8"></script>
-	
+	<script  src="Artifact.js" charset="UTF-8"></script>
+	<script  src="chat.js" charset="UTF-8"></script>
 
   </head>
   
@@ -121,142 +122,171 @@
 			</div>
 		  
 			<div class="row-fluid InspectionSelected">
-				<!-- <div class="span12"> -->
-					<!-- <div class="row"> -->
-						<div class="span6 Artifacts">
-							
+				<div class="span6 Artifacts">
+					
+					<div class="row-fluid">
+						<div class="span3 Artifact well well-small" data-content="lorem ipsum" data-original-title="pop-title">
 							<div class="row-fluid">
-								<div class="span3 Artifact well well-small">
-									<h2>Artifact1</h2>
-								</div>
-								<div class="span1 Artifact-onhover">
-									<div class="row-fluid"><i class="icon-upload"></i></div>
-									<div class="row-fluid"><i class="icon-download"></i></div>
-									<div class="row-fluid"><i class="icon-trash"></i></div>
-								</div>
+								<h2>Artifact 1</h2>
 							</div>
 							<div class="row-fluid">
-								<div class="span3 Artifact  well well-small">
-									<h2>Artifact2</h2>
-								</div>
-								<div class="span1 Artifact-onhover">
-									<div class="row-fluid"><i class="icon-upload"></i></div>
-									<div class="row-fluid"><i class="icon-download"></i></div>
-									<div class="row-fluid"><i class="icon-trash"></i></div>
-								</div>
+								<span class="label label-warning pull-left Status">in progress</span>
 							</div>
-							<div class="row-fluid">
-								<div class="span3 Artifact  well well-small">
-									<h2>Artifact3</h2>
-								</div>
-								<div class="span1 Artifact-onhover">
-									<div class="row-fluid"><i class="icon-upload"></i></div>
-									<div class="row-fluid"><i class="icon-download"></i></div>
-									<div class="row-fluid"><i class="icon-trash"></i></div>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span12 Artifact-Footer">
-									<i class="icon-download"></i>
-									<i class="icon-plus-sign"></i>
-								</div>
-							</div>
-							
-							
 						</div>
-						<div class="span6 ChatContainer">
-							
-							<div class="span12 ChatInner">
-								<div class="row-fluid MessageWindow">
-									<div class="span12 well MessageWindowInner">
-										<div class="row-fluid MessageContainer">
-											<div class="row-fluid AuthorDigest">
-												<strong class="IMAuthor">John Doe</strong>
-												<span class="text-info IMTimestamp">30.12.2013 23:59</span>
-											</div>
-											<div class="row-fluid Message">
-												<div class="span10 well well-small MessageInner">
-													<p>hello!</p>
-												</div>
-											</div>
-										</div>
-
-										<div class="row-fluid MessageContainer">
-											<div class="row-fluid AuthorDigest UserDigest">		
-												<span class="text-info IMTimestamp">31.12.2013 20:09</span>
-												<strong class="IMAuthor">Hank Moody</strong>
-											</div>
-											<div class="row-fluid Message">
-												<div class="span10 pull-right well well-small MessageInner">
-													<p class="pull-right">
-													Hi, girls!</p>
-												</div>	
-											</div>
-										</div>
-
-										<div class="row-fluid MessageContainer">
-											<div class="row-fluid AuthorDigest">
-												<strong class="IMAuthor">John Doe</strong>
-												<span class="text-info IMTimestamp">31.12.2013 20:39</span>
-											</div>
-
-											<div class="row-fluid Message">
-												<div class="span10 well well-small MessageInner">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-												</div>
-											</div>
-										</div>
-
-										<div class="row-fluid MessageContainer">
-											<div class="row-fluid AuthorDigest">
-												<strong class="IMAuthor">Alex Foe</strong>
-												<span class="text-info IMTimestamp">31.12.2013 20:59</span>
-											</div>
-											<div class="row-fluid Message">
-												<div class="span10 well well-small MessageInner">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-												</div>	
-											</div>
-										</div>
-
-										<div class="row-fluid MessageContainer">
-											<div class="row-fluid AuthorDigest UserDigest">		
-												<span class="text-info IMTimestamp">31.12.2013 23:59</span>
-												<strong class="IMAuthor">Hank Moody</strong>
-											</div>
-											<div class="row-fluid Message">
-												<div class="span10 pull-right well well-small MessageInner">
-													<p class="pull-right">
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-												</div>	
-											</div>
+						<div class="span1 Artifact-onhover">
+							<div class="row-fluid"><i class="icon-upload"></i></div>
+							<div class="row-fluid"><i class="icon-download"></i></div>
+							<div class="row-fluid"><i class="icon-trash"></i></div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span3 Artifact  well well-small">
+							<div class="row-fluid ArtifactBody">
+								<h2>Artifact 2</h2>
+							</div>
+							<div class="row-fluid">
+								<span class="label label-succeess pull-left  Status">reviewed</span>
+							</div>
+						</div>
+						<div class="span1 Artifact-onhover">
+							<div class="row-fluid"><i class="icon-upload"></i></div>
+							<div class="row-fluid"><i class="icon-download"></i></div>
+							<div class="row-fluid"><i class="icon-trash"></i></div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span3 Artifact  well well-small">
+							<div class="row-fluid">
+								<h2>Artifact 33</h2>
+							</div>
+							<div class="row-fluid">
+								<span class="label label-important pull-left Status">not assigned</span>
+							</div>
+						</div>
+						<div class="span1 Artifact-onhover">
+							<div class="row-fluid"><i class="icon-upload"></i></div>
+							<div class="row-fluid"><i class="icon-download"></i></div>
+							<div class="row-fluid"><i class="icon-trash"></i></div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span3 Artifact  well well-small">
+							<div class="row-fluid">
+								<h2>Artifact 4</h2>
+							</div>
+							<div class="row-fluid">
+								<span class="label label-info pull-left Status">assigned</span>
+							</div>
+						</div>
+						<div class="span1 Artifact-onhover">
+							<div class="row-fluid"><i class="icon-upload"></i></div>
+							<div class="row-fluid"><i class="icon-download"></i></div>
+							<div class="row-fluid"><i class="icon-trash"></i></div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12 Artifact-Footer">
+							<i class="icon-download"></i>
+							<i class="icon-plus-sign"></i>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="span6 ChatContainer">
+					
+					<div class="span12 ChatInner">
+						<div class="row-fluid MessageWindow">
+							<div class="span12 well MessageWindowInner">
+								<div class="row-fluid MessageContainer">
+									<div class="row-fluid AuthorDigest">
+										<strong class="IMAuthor">John Doe</strong>
+										<span class="text-info IMTimestamp">30.12.2013 23:59</span>
+									</div>
+									<div class="row-fluid Message">
+										<div class="span10 well well-small MessageInner">
+											<p>hello!</p>
 										</div>
 									</div>
-
 								</div>
 
+								<div class="row-fluid MessageContainer">
+									<div class="row-fluid AuthorDigest UserDigest">		
+										<span class="text-info IMTimestamp">31.12.2013 20:09</span>
+										<strong class="IMAuthor">Hank Moody</strong>
+									</div>
+									<div class="row-fluid Message">
+										<div class="span10 pull-right well well-small MessageInner">
+											<p class="pull-right">
+											Hi, girls!</p>
+										</div>	
+									</div>
+								</div>
 
-								<div class="row-fluid SendMessage">
-									<textarea class="ChatTypeBox" rows="2">Type your answer</textarea>
-									<button class="btn btn-primary pull-right" type="submit">Send</button
+								<div class="row-fluid MessageContainer">
+									<div class="row-fluid AuthorDigest">
+										<strong class="IMAuthor">John Doe</strong>
+										<span class="text-info IMTimestamp">31.12.2013 20:39</span>
+									</div>
+
+									<div class="row-fluid Message">
+										<div class="span10 well well-small MessageInner">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="row-fluid MessageContainer">
+									<div class="row-fluid AuthorDigest">
+										<strong class="IMAuthor">Alex Foe</strong>
+										<span class="text-info IMTimestamp">31.12.2013 20:59</span>
+									</div>
+									<div class="row-fluid Message">
+										<div class="span10 well well-small MessageInner">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>	
+									</div>
+								</div>
+
+								<div class="row-fluid MessageContainer">
+									<div class="row-fluid AuthorDigest UserDigest">		
+										<span class="text-info IMTimestamp">31.12.2013 23:59</span>
+										<strong class="IMAuthor">Hank Moody</strong>
+									</div>
+									<div class="row-fluid Message">
+										<div class="span10 pull-right well well-small MessageInner">
+											<p class="pull-right">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>	
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="row-fluid SendMessage">
+							<div class="span12 SendMessageInner">
+								<div class="row-fluid ChatTypeBoxRow">
+									<textarea class="ChatTypeBox pull-right" rows="2">Type your answer</textarea>
+								</div>
+								<div class="row-fluid">
+									<button class="btn btn-primary pull-right" type="submit">Send</button>
 								</div>
 							</div>
 						</div>
-						
-						
-					<!-- </div> -->
-				<!-- </div> -->
+					</div>
+				</div>
 			</div>
-	    <!-- </div> -->
-		
+
 		<div class="row-fluid">
-			<div class="span12 Footer">
+			<div class="span12 Footer well well-small">
 				<p> Some information being copyrighted(C) </p> 
 				
 			</div>
 		</div>	
 	</div>
-	
+
 	
 	
 	

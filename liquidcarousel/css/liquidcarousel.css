@@ -1,11 +1,10 @@
 .liquid {
 	/* background:#313b31 url('../images/bodybackground.png') repeat-y scroll 50% 0; */
-	background:#a4b1c9 repeat-y scroll 50% 0; 
-	border:2px solid #19301C;
+	background:#c6dbdd repeat-y scroll 50% 0; 
+	border: 2px solid #00aaaa;
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px 10px 10px 10px;
-	border-radius:10px 10px 10px 10px;
-	padding:10px 0;
+	border-radius:10px 10px 10px 10px;	padding:10px 0;
 }
 .liquid .previous {
 	display:block;
