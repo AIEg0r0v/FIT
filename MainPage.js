@@ -18,12 +18,12 @@ function toggleContentSlide(content){
  };
 
 function slideUpProps(container){
-		var ArtifactProps = container.children(".Artifact-onhover");
+		var ArtifactProps = container.children("[class*=ActionPanel]");
 		ArtifactProps.slideUp("fast");
 };
 
 function slideDownProps(container){
-		var ArtifactProps = container.children(".Artifact-onhover");
+		var ArtifactProps = container.children("[class*=ActionPanel]");
 		ArtifactProps.slideDown("fast");
 };
 
@@ -81,6 +81,8 @@ $(document).ready(function(){
 		}
 	});
 
+
+
 	$(".Dock").click(function(){
 		if(ChatShown){
 			
@@ -100,6 +102,10 @@ $(document).ready(function(){
 			
 		}
 		
+	});
+
+	$(".ActionElement").click(function(){
+		alert("action taken");
 	});
 });
 

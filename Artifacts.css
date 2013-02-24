@@ -21,6 +21,7 @@ body .modal{
 
 .Artifacts{
 	padding: 10px;
+	min-width: 200px;
 	/*background:#dddddd;*/
 	/*border: 1px solid #cccccc;*/
 	-moz-border-radius:5px 5px 5px 5px;
@@ -28,7 +29,7 @@ body .modal{
 	border-radius:5px;
 
 }
-.Artifact-onhover{
+.ArtifactActionPanel, .InspectionActionPanel{
 	display:none;
 	background-color: rgba(40,29,35,0.5);
 	width:100%;
@@ -46,25 +47,25 @@ body .modal{
 	list-style-type: none; 
 
 }*/
-.Artifact-onhover>.ArtifactProp{
+.ActionPanel>.ActionElement, .InspectionActionPanel>.ActionElement{
 	border:1px solid rgba(40,29,35,0);
 	/*background-color: rgba(92,81,79,0.5);*/
 	border-radius: 2px 2px 2px 2px;
 
 }
-.Artifact-onhover>.ArtifactProp:hover{
+.ArtifactActionPanel>.ActionElement:hover, .InspectionActionPanel>.ActionElement:hover{
 	/*border:1px solid rgba(10,19,15,1);*/
 	background-color: rgba(92,81,79,0.5);
 	border-radius: 2px 2px 2px 2px;
 
 }
-.Artifact-Footer>.ArtifactProp{
+.Artifact-Footer>.ActionElement{
 	border:1px solid rgba(40,29,35,0);
 	/*background-color: rgba(92,81,79,0.5);*/
 	border-radius: 2px 2px 2px 2px;
 
 }
-.Artifact-Footer>.ArtifactProp:hover{
+.Artifact-Footer>.ActionElement:hover{
 	/*border:1px solid rgba(10,19,15,1);*/
 	background-color: rgba(200,200,200,0.5);
 	border-radius: 2px 2px 2px 2px;
