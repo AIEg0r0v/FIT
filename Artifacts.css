@@ -84,6 +84,9 @@ body .modal{
 	display:none;
 
 }
+.IIHeader{
+	text-align: center;
+}
 .liquid{
 	margin: 0px 0px 10px 0px;
 }
@@ -97,4 +100,43 @@ body .modal{
 	text-align: center;
 	border-radius:5px;
 	margin: 10px 0px 0px 0px;
+}
+
+.chevron-fletching{
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width:0;
+	height: 0;
+	border-top: 15px solid green;
+	border-bottom: 15px solid green;
+	border-left: 15px solid transparent;
+	
+}
+.chevron-body{
+	position: absolute;
+	left:15px;
+	top: 0px;
+	width:80px;
+	height: 30px;
+	background-color: green;
+
+	text-align: center;
+	/*line-height: 30px;*/
+}
+.chevron-head{
+	position: absolute;
+	left:95px;
+	top: 0px;
+	width:0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid green;
+	
+}
+.chevron{
+	position: relative;
+	color: white;
+	/*border:1px solid black;*/
 }

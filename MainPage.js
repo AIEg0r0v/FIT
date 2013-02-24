@@ -53,7 +53,7 @@ $(document).ready(function(){
 		toggleContentVisibility(container);
 		$(this).toggleClass("IIHeader IIHeaderContentExpanded");
 	});
-	$('#liquid').liquidcarousel({height:110, hidearrows: false});
+	$('#liquid').liquidcarousel({height:130, hidearrows: false});
 
 	$(".Artifact, .InspectionItem").hover(function(){
 		propsTimeout = window.setTimeout(slideDownProps,1000,$(this));
