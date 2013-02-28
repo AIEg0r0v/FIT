@@ -129,7 +129,9 @@ $(document).ready(function(){
 	$(".CommentsClose").click(function(){
 		fadeOutContent($(".ArtifactComments"));
 	});
-
+	$(".Responsible, .Responsible-Selected").click(function(){
+		$(this).toggleClass("Responsible Responsible-Selected");
+	});
 
 
 });

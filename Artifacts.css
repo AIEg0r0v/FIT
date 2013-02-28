@@ -200,3 +200,41 @@ body .modal{
 	border-radius:0px 2px 2px 0px;
 
 }
+.ArtifactResposible{
+	position: absolute;
+	left:200px;
+	top: 0px;
+	width: 300px;
+	z-index: 1;
+	background-color: rgba(40,29,35,0.9);
+	color:white;
+	border-radius:0px 2px 2px 0px;
+}
+
+.ArtifactsPanel{
+	position:relative;
+}
+.ArtifactResposible{
+	/*padding: 0px 0px;*/
+	border-radius: 0px 5px 5px 0px;
+}
+.Responsible, .Responsible-Selected{
+/*	padding: 0px 0px 2px 2px;*/
+	/*border: 2px solid transparent;*/
+	border-radius: 2px 2px 2px 2px;
+}
+
+.Responsible:hover{
+	background-color: rgba(92,81,79,0.5);
+	/*color:orange;*/
+}
+.Responsible-Selected{
+	background-color: rgba(92,201,79,0.5);
+}
+.ResponsibleConfirmation{
+	line-height: 2em;
+	text-align: center;
+}
+.ResponsibleConfirmation>span:hover{
+	color:orange;
+}
