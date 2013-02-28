@@ -19,15 +19,27 @@ body .modal{
 	position: relative;
 }
 
-.Artifacts{
+.ArtifactsPanel{
 	padding: 10px;
 	min-width: 200px;
+
+/*	overflow-x: none;
+	overflow-y: hidden;*/
 	/*background:#dddddd;*/
 	/*border: 1px solid #cccccc;*/
 	-moz-border-radius:5px 5px 5px 5px;
 	-webkit-border-radius:5px 5px 5px 5px;
 	border-radius:5px;
 
+}
+.ArtifactsRowContainer{
+	max-height: 500px; 
+	overflow-x: none;
+	overflow-y: hidden;
+}
+.ArtifactsRowContainer:hover{
+	overflow-x: none;
+	overflow-y: auto;
 }
 .ArtifactActionPanel, .InspectionActionPanel{
 	display:none;
@@ -47,13 +59,13 @@ body .modal{
 	list-style-type: none; 
 
 }*/
-.ActionPanel>.ActionElement, .InspectionActionPanel>.ActionElement{
+.ActionPanel>.ActionElement, .InspectionActionPanel>.ActionElement, .ACTRActionPanel>.ActionElement{
 	border:1px solid rgba(40,29,35,0);
 	/*background-color: rgba(92,81,79,0.5);*/
 	border-radius: 2px 2px 2px 2px;
 
 }
-.ArtifactActionPanel>.ActionElement:hover, .InspectionActionPanel>.ActionElement:hover{
+.ArtifactActionPanel>.ActionElement:hover, .InspectionActionPanel>.ActionElement:hover, .ACTRActionPanel>.ActionElement:hover{
 	/*border:1px solid rgba(10,19,15,1);*/
 	background-color: rgba(92,81,79,0.5);
 	border-radius: 2px 2px 2px 2px;
@@ -140,4 +152,51 @@ body .modal{
 	position: relative;
 	color: white;
 	/*border:1px solid black;*/
+}
+
+.ArtifactComments{
+	max-width: 500px;
+}
+
+.CommentsHeader{
+	position:relative;
+
+}
+.CommentsClose{
+	display: none;
+	background-color: rgba(40,29,35,0.5);
+	border:1px solid transparent;
+	border-radius: 2px 2px 2px 2px;
+	position: absolute;
+	color:white;
+	right:0px;
+	top: 0px;
+	width: 3em;
+	height: 1em;
+	line-height: 1em;
+}
+.CommentsClose:hover{
+	background-color: rgba(0,0,0,0.5);
+	color:orange;
+}
+/*ACTR stands for Artifact Comments Table's Row*/
+.ACTR{
+
+}
+/*ACTR stands for Artifact Comments Table's Cell*/
+.ACTC{
+	position: relative;
+}
+.ACTRActionPanel{
+	position: absolute;
+	right:0px;
+	top: 0px;
+	z-index: 1;
+	display:none;
+	background-color: rgba(40,29,35,0.5);
+	height:100%;
+	width: 40px;
+	text-align: center;
+	border-radius:0px 2px 2px 0px;
+
 }

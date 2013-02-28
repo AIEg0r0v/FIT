@@ -43,8 +43,7 @@ $(document).ready(function(){
 	var propsTimeout;
 	var ChatShown = true;
 	$("div.ArtifactBody").click(function(){
-		$("#InspectionItemModal").modal('show');
-		
+		fadeInContent($(".ArtifactComments"));
 	});
 
 
@@ -85,16 +84,16 @@ $(document).ready(function(){
 
 	$(".Dock").click(function(){
 		if(ChatShown){
-			
+			// $(".ChatContainer").css("min-width: 20px;");
 			fadeOutContent($(".ChatInner"));
-			$(".ChatContainer").removeClass("span6");
+			
 			$(".Dock").css('left','0px');
 			ChatShown = false;
 			
 			
 		}
 		else{
-			$(".ChatContainer").addClass("span6");
+			// $(".ChatContainer").css("min-width: 20px;");
 			fadeInContent($(".ChatInner"));
 			$(".Dock").css('left','-20px');
 			ChatShown = true;
@@ -107,5 +106,31 @@ $(document).ready(function(){
 	$(".ActionElement").click(function(){
 		alert("action taken");
 	});
+
+	$(".ACTR").hover(function(){
+		var ap = $(this).children(".ACTC").children(".ACTRActionPanel")
+		var rHeight = $(this).css("height");
+		ap.css("line-height", rHeight);
+		propsTimeout = window.setTimeout(fadeInContent,1000,ap);
+		// slideDownProps($(this));
+	},function(){
+		window.clearTimeout(propsTimeout);
+		var ap = $(this).children(".ACTC").children(".ACTRActionPanel")
+		fadeOutContent(ap);
+	});
+
+	$(".CommentsHeader").hover(function(){
+		propsTimeout = window.setTimeout(fadeInContent,1000,$(".CommentsClose"));
+		// slideDownProps($(this));
+	},function(){
+		window.clearTimeout(propsTimeout);
+		fadeOutContent($(".CommentsClose"));
+	});
+	$(".CommentsClose").click(function(){
+		fadeOutContent($(".ArtifactComments"));
+	});
+
+
+
 });
 
