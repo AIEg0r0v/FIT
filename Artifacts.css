@@ -208,19 +208,21 @@ body .modal{
 	z-index: 1;
 	background-color: rgba(40,29,35,0.9);
 	color:white;
-	border-radius:0px 2px 2px 0px;
+	max-height: 430px;
+	overflow-y:hidden;
+	border-radius: 0px 5px 5px 0px;
 }
 
 .ArtifactsPanel{
 	position:relative;
 }
-.ArtifactResposible{
-	/*padding: 0px 0px;*/
-	border-radius: 0px 5px 5px 0px;
+.ArtifactResposible:hover{
+	overflow-y:auto;
 }
 .Responsible, .Responsible-Selected{
 /*	padding: 0px 0px 2px 2px;*/
 	/*border: 2px solid transparent;*/
+	max-height: 
 	border-radius: 2px 2px 2px 2px;
 }
 
