@@ -49,8 +49,14 @@
 
 .MessageInner{
 	background-color:#c6dbdd;
+	min-height: 20px; /*somehow this rule does not override the one in the twitter bootstrap*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
 }
-
+.MessageInner>p{
+	margin: 0px 0px 0px;
+}
 .AuthorDigest{
 	color: #212318;
 }

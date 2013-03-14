@@ -15,7 +15,7 @@ body .modal{
 .Artifact{
 	border: 1px solid #a4b1c9;
 	/*margin: 0px 0px 10px 0px;*/
-	min-width: 13em;
+	width: 11em;
 	position: relative;
 }
 
@@ -33,7 +33,7 @@ body .modal{
 
 }
 .ArtifactsRowContainer{
-	max-height: 500px; 
+	max-height: 450px; 
 	overflow-x: none;
 	overflow-y: hidden;
 }
@@ -59,6 +59,11 @@ body .modal{
 	list-style-type: none; 
 
 }*/
+
+.ArtifactName{
+	word-wrap: break-word;
+	width: 100%;
+}
 .ActionPanel>.ActionElement, .InspectionActionPanel>.ActionElement, .ACTRActionPanel>.ActionElement{
 	border:1px solid rgba(40,29,35,0);
 	/*background-color: rgba(92,81,79,0.5);*/
@@ -71,13 +76,13 @@ body .modal{
 	border-radius: 2px 2px 2px 2px;
 
 }
-.Artifact-Footer>.ActionElement{
+.Artifact-Header>.ActionElement{
 	border:1px solid rgba(40,29,35,0);
 	/*background-color: rgba(92,81,79,0.5);*/
 	border-radius: 2px 2px 2px 2px;
 
 }
-.Artifact-Footer>.ActionElement:hover{
+.Artifact-Header>.ActionElement:hover{
 	/*border:1px solid rgba(10,19,15,1);*/
 	background-color: rgba(200,200,200,0.5);
 	border-radius: 2px 2px 2px 2px;
@@ -240,3 +245,4 @@ body .modal{
 .ResponsibleConfirmation>span:hover{
 	color:orange;
 }
+
