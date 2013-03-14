@@ -16,9 +16,14 @@ body .modal{
 	border: 1px solid #a4b1c9;
 	/*margin: 0px 0px 10px 0px;*/
 	width: 11em;
+	height: 4em;
 	position: relative;
+	margin-bottom: 0px; /*overriding bootstrap properties for well, since or artifact also well*/
 }
-
+.Artifacts .thumbnail{
+	border-color: transparent;
+	padding: 0px;
+}
 .ArtifactsPanel{
 	padding: 10px;
 	min-width: 200px;
@@ -33,7 +38,8 @@ body .modal{
 
 }
 .ArtifactsRowContainer{
-	max-height: 450px; 
+	/*max-width: 410px; */
+	max-height: 450px;
 	overflow-x: none;
 	overflow-y: hidden;
 }
@@ -75,6 +81,10 @@ body .modal{
 	background-color: rgba(92,81,79,0.5);
 	border-radius: 2px 2px 2px 2px;
 
+}
+.Artifact-Header [class *="ActionElement"]:first-child{
+	/*the same margin as for thumbnail*/
+	margin-left: 20px;
 }
 .Artifact-Header>.ActionElement{
 	border:1px solid rgba(40,29,35,0);
