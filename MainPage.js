@@ -6,8 +6,10 @@ function toggleContent(content){
 	//insert check that the variable is div. Better if it is a proper div
 	content.fadeToggle("slow");
 };
-function toggleContentSlide(content){
-
+function toggleChat(){
+			$(".ChatContainer").toggleClass("span4 ChatDocked");
+			$(".ArtifactComments").toggleClass("span4 span6");	
+			$(".ArtifactsPanel").toggleClass("span4 span6");
 }
 //On change Inspection class when expanded/collapsed.
  function toggleContentVisibility(container){
@@ -85,19 +87,25 @@ $(document).ready(function(){
 	$(".Dock").click(function(){
 		if(ChatShown){
 			// $(".ChatContainer").css("min-width: 20px;");
-			fadeOutContent($(".ChatInner"));
-			
-			$(".Dock").css('left','0px');
 			ChatShown = false;
+			$(".ArtifactComments").css("padding-right","30px");
+			$(".Dock").css("left","auto");
+			$(".Dock").css('right','0px');	
+			fadeOutContent($(".ChatInner"));
+			propsTimeout = window.setTimeout(toggleChat,500);
+			
+	
+			
 			
 			
 		}
 		else{
 			// $(".ChatContainer").css("min-width: 20px;");
+			toggleChat();
 			fadeInContent($(".ChatInner"));
-			$(".Dock").css('left','-20px');
+			$(".Dock").css("right","auto");
+		 	$(".Dock").css('left','-25px');
 			ChatShown = true;
-			
 			
 		}
 		

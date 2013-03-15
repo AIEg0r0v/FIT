@@ -6,21 +6,25 @@
 .ChatContainer{
 	position: relative;
 	height: 400px;
-	max-width: 300px;
+	/*max-width: 300px;*/
 	/*min-width: 200px;*/
 	/*min-width: 10px;*/
-	padding: 10px 10px;
+	/*padding: 10px 10px;*/
 	/*border: 1px solid #cccccc;*/
 	-moz-border-radius:5px 5px 5px 5px;
 	-webkit-border-radius:5px 5px 5px 5px;
 	border-radius:5px;
+	/*right:0px;*/
+	/*top:0px;*/
+	z-index: 2;
 }
 .MessageWindowInner{
 	height: 100%; /*don forget to substract border of parent*/
 
 }
 .SendMessage{
-	height: 30%; /*don forget to substract border of parent*/
+	/*height: 30%; don forget to substract border of parent*/
+	padding-top: 5px;
 
 }
 .MessageWindow{
@@ -77,13 +81,25 @@
 }
 .Dock{
 	background-color: rgba(0,0,0,0.5);
+	color:white;
 	width:20px;
 	height: 100%;
 	position: absolute;
 	top:0px;
-	left:-20px;
+	left:-25px;
 	-moz-border-radius:5px 0px 0px 5px;
 	-webkit-border-radius:5px 0px 0px 5px;
 	border-radius:5px 0px 0px 5px;
 	display:none;
+}
+.Dock > p:last-child{
+	position: relative;
+	top:25%;
+	/*padding-top: 40%;*/
+	width: 1em;
+	text-align: center;
+
+}
+.Dock:hover{
+	color:orange;
 }
